@@ -1,6 +1,6 @@
 body {
-    background-color: #181a1b;
-    color: #e8e6e3;
+    background-color: #1a1a1a;
+    color: #dfdfdf;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -8,9 +8,19 @@ body {
 
 header {
     text-align: center;
-    border-bottom: 2px solid #2d3134;
+    border-bottom: 2px solid #292929;
     padding-bottom: 15px;
     margin-bottom: 20px;
+}
+
+header h1 {
+    color: #fbbb13; /* GameBanana Signature Yellow */
+    margin: 0 0 5px 0;
+}
+
+header p {
+    color: #a3a3a3;
+    margin: 0;
 }
 
 .pointercrate-container {
@@ -25,59 +35,99 @@ header {
 .list-panel {
     flex: 1;
     overflow-y: scroll;
-    border: 1px solid #2d3134;
-    background: #1e2224;
+    border: 1px solid #333333;
+    background: #222222;
     border-radius: 4px;
 }
 
 .list-item {
     padding: 15px;
-    border-bottom: 1px solid #2d3134;
+    border-bottom: 1px solid #333333;
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: background-color 0.2s ease;
 }
 
 .list-item:hover {
-    background-color: #252a2d;
+    background-color: #2d2d2d;
 }
 
 .rank {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    min-width: 50px;
-    color: #ff4a4a;
+    min-width: 60px;
+    color: #fbbb13; /* Yellow ranks match the logo palette */
 }
 
 .song-info h3 {
     margin: 0;
     font-size: 1.1rem;
+    color: #ffffff;
 }
 
 .song-info p {
     margin: 4px 0 0 0;
     font-size: 0.85rem;
-    color: #a8a095;
+    color: #a3a3a3;
 }
 
 /* Static Inspector Right Panel */
 .inspector-panel {
     flex: 1;
-    background: #1e2224;
-    border: 1px solid #2d3134;
+    background: #222222;
+    border: 1px solid #333333;
     padding: 20px;
     border-radius: 4px;
     overflow-y: auto;
 }
 
+.inspector-panel h2 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #a3a3a3;
+    margin: 5px 0;
+}
+
+.meta span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
 .section-box {
-    background: #252a2d;
+    background: #1a1a1a;
+    border: 1px solid #333333;
     padding: 15px;
     margin-top: 15px;
     border-radius: 4px;
 }
 
-a { color: #5294e2; text-decoration: none; }
-a:hover { text-decoration: underline; }
-ul { padding-left: 20px; }
-li { margin-bottom: 8px; }
+.section-box h3 {
+    margin-top: 0;
+    color: #fbbb13;
+    font-size: 1rem;
+}
+
+a { 
+    color: #fbbb13; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+ul { 
+    padding-left: 20px; 
+    margin: 10px 0 0 0;
+}
+
+li { 
+    margin-bottom: 8px; 
+    color: #dfdfdf;
+}
