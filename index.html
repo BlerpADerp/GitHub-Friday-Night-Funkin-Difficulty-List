@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNF Legitimate Top 50 List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FNF Legitimate Top 50 List</h1>
+        <p>The hardest, public, humanly beatable Friday Night Funkin' charts. Strictly no spam.</p>
+    </header>
+
+    <div class="pointercrate-container">
+        <!-- Left Panel: Scrollable Top 50 List -->
+        <div class="list-panel" id="listPanel">
+            <!-- JavaScript will load songs here -->
+        </div>
+
+        <!-- Right Panel: Detailed Song Inspector -->
+        <div class="inspector-panel" id="inspectorPanel">
+            <div id="inspectorDefault">
+                <h3>Select a song from the list to view records and verification proof.</h3>
+            </div>
+            <div id="inspectorContent" style="display: none;">
+                <h2 id="songTitle">Song Title</h2>
+                <p class="meta">Mod Source: <span id="songMod">-</span></p>
+                <p class="meta">Charter: <span id="songCharter">-</span></p>
+                
+                <div class="section-box">
+                    <h3>Verification Video</h3>
+                    <a id="verificationLink" href="#" target="_blank">Watch Proof on YouTube</a>
+                </div>
+
+                <div class="section-box">
+                    <h3>Vetted Victor Records</h3>
+                    <ul id="victorList">
+                        <!-- Victors will appear here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
